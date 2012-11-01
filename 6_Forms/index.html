@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOTEL RESERVATION</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link REL=StyleSheet HREF="style.css" TYPE="text/css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body
+
+<div data-role="page">
+
+	<div data-role="header">
+		<p class="comic_sans">YOU ARE WELCOME IN OUR HOTEL</p>
+	</div>
+
+	<div data-role="content">
+		<p >Hello, Please enter the check-in and check-out date that you want!</p>
+        <!-- <form action="some.php" method="post"> -->
+        <form>
+            <label for="basic">Check-In date</label>
+            <input type="text" id="name" data-mini="true" />
+            <label for="basic">Check-Out</label>
+            <input type="text" id="dob" data-mini="true" />
+            <button onClick="displayMsg();">Search</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+
+<script>
+function displayMsg(){
+    alert("Hi, " + "! Check-In Date: " + $("#name").val() + "! Check-Out Date: " + $("#dob").val() + "!");
+}
+</script>
+
+</html>
